@@ -20,6 +20,11 @@ header {
     padding: 0.3rem;
 }
 
+.titlehead {
+    font-size: 2.2rem;
+    margin: 0.5rem;
+}
+
 main .city {
     display: flex;
     align-items: center;
@@ -32,4 +37,18 @@ main .city {
 
 main .city i {
     font-size: 1.5rem;
+}
+
+/* EXPLORER */
+
+.explorer {
+    text-align: center;
+}
+.explorer h2 {
+     font-size: 2rem;
+     margin-top: 2rem;
+}
+
+.explorer p {
+    font-size: 1rem;
 }
