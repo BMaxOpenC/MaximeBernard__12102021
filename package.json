@@ -1,0 +1,22 @@
+{
+  "name": "p3_bernard-maxime",
+  "version": "1.0.0",
+  "description": "OC Projet 3 Ohmyfood",
+  "main": "index.js",
+  "scripts": {
+    "sass": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BMaxOpenC/P3_bernard-maxime.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BMaxOpenC/P3_bernard-maxime/issues"
+  },
+  "homepage": "https://github.com/BMaxOpenC/P3_bernard-maxime#readme",
+  "dependencies": {
+    "sass": "^1.43.2"
+  }
+}
