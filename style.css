@@ -11,6 +11,10 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+main {
+  padding: 0 1rem;
+}
+
 header {
   position: relative;
   font-family: "Shrikhand", cursive;
@@ -62,4 +66,7 @@ header {
 .explorer button:hover {
   transform: scale(1.015);
   opacity: 0.9;
-}/*# sourceMappingURL=style.css.map */
+
+}
+
+/*# sourceMappingURL=style.css.map */
