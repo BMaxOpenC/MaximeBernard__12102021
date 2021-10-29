@@ -1,4 +1,5 @@
 .functioning {
+  margin-bottom: 2rem;
   counter-reset: funcnum;
 }
 .functioning ol {
@@ -29,8 +30,9 @@
   place-items: center;
   border-radius: 50%;
   position: absolute;
-  bottom: 1rem;
+  bottom: 50%;
   left: -1.3rem;
+  transform: translateY(50%);
 }
 .functioning li:hover {
   transform: scale(1.02);

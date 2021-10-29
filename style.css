@@ -69,6 +69,7 @@ header {
 }
 
 .functioning {
+  margin-bottom: 2rem;
   counter-reset: funcnum;
 }
 .functioning ol {
@@ -99,8 +100,9 @@ header {
   place-items: center;
   border-radius: 50%;
   position: absolute;
-  bottom: 1rem;
+  bottom: 50%;
   left: -1.3rem;
+  transform: translateY(50%);
 }
 .functioning li:hover {
   transform: scale(1.02);
@@ -114,7 +116,17 @@ header {
 .menus {
   background-color: #f6f6f6;
 }
+.menus h2 {
+  margin-bottom: 2rem;
+}
+.menus .menus__cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
 .menus .card {
   border: 1px solid black;
   height: 4rem;
+  flex-grow: 1;
+  min-width: 30rem;
 }/*# sourceMappingURL=style.css.map */
