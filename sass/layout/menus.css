@@ -1,6 +1,9 @@
 .menus {
   background-color: #f6f6f6;
 }
+.menus h2 {
+  margin-bottom: 2rem;
+}
 .menus .menus__cards {
   display: flex;
   flex-wrap: wrap;
