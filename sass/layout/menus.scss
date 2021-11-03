@@ -14,23 +14,15 @@
     }
 
     .card {
-        border: 1px solid black;
         &__img {
-            background-size: cover;
             height: 15rem;
             border-radius: 1rem;
+            background-size: cover;
         }
-        &__img1 {
-            background-image: url("../../restaurants/img1.jpg");
-        }
-        &__img2 {
-            background-image: url("../../restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
-        }
-        &__img3 {
-            background-image: url("../../restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
-        }
-        &__img4 {
-            background-image: url("../../restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+        @for $i from 1 through 4 {
+            &__img#{$i} {
+                background-image: url("../../restaurants/img#{$i}.jpg");
+            }
         }
     }
 }
