@@ -1,5 +1,5 @@
-@use "../utils/variables.scss";
-@use "../utils/colors.scss";
+@import "../utils/variables.scss";
+@import "../utils/colors.scss";
 
 .menus {
     background-color: #f6f6f6;
@@ -9,7 +9,7 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
-        @media (max-width: variables.$breakpoint) {
+        @media (max-width: $breakpoint) {
         grid-template-columns: repeat(1, 1fr);
         }
         .new {
@@ -24,8 +24,8 @@
             place-items: center;
             right: 1rem;
             top: 1rem;
-            background-color: colors.$tertiary;
-            color: darken(colors.$tertiary, 50%);
+            background-color: $tertiary;
+            color: darken($tertiary, 50%);
         }
     }
 
@@ -38,6 +38,15 @@
         @for $i from 1 through 4 {
             &__img#{$i} {
                 background-image: url("/restaurants/img#{$i}.jpg");
+            }
+        }
+        &__name {
+            h3,
+            p {
+                margin: 0.5rem;
+            }
+            i {
+                font-size: 2rem;
             }
         }
     }

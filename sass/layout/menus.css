@@ -42,4 +42,11 @@
 }
 .menus .card__img4 {
   background-image: url("/restaurants/img4.jpg");
+}
+.menus .card__name h3,
+.menus .card__name p {
+  margin: 0.5rem;
+}
+.menus .card__name i {
+  font-size: 2rem;
 }/*# sourceMappingURL=menus.css.map */
