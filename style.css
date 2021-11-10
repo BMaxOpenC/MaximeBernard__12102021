@@ -129,6 +129,7 @@ header {
 
 .menus {
   background-color: #f6f6f6;
+  margin-bottom: 2rem;
 }
 .menus .menus__cards {
   display: grid;
@@ -157,7 +158,7 @@ header {
 }
 .menus .card__img {
   height: 15rem;
-  border-radius: 1rem;
+  border-radius: 1rem 1rem 0 0;
   background-size: cover;
 }
 .menus .card__img1 {
@@ -172,10 +173,24 @@ header {
 .menus .card__img4 {
   background-image: url("/restaurants/img4.jpg");
 }
+.menus .card__name {
+  position: relative;
+}
 .menus .card__name h3,
 .menus .card__name p {
   margin: 0.5rem;
 }
+.menus .card__name h3 {
+  padding-top: 0.5rem;
+}
 .menus .card__name i {
   font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+footer {
+  background-color: #353535;
 }/*# sourceMappingURL=style.css.map */

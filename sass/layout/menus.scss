@@ -3,6 +3,7 @@
 
 .menus {
     background-color: #f6f6f6;
+    margin-bottom: 2rem;
     
 
     .menus__cards {
@@ -32,7 +33,7 @@
     .card {
         &__img {
             height: 15rem;
-            border-radius: 1rem;
+            border-radius: 1rem 1rem 0 0;
             background-size: cover;
         }
         @for $i from 1 through 4 {
@@ -41,12 +42,20 @@
             }
         }
         &__name {
+            position: relative;
             h3,
             p {
                 margin: 0.5rem;
             }
+            h3 {
+                padding-top: 0.5rem;
+            }
             i {
                 font-size: 2rem;
+                position: absolute;
+                right: 1rem;
+                top: 50%;
+                transform: translateY(-50%);
             }
         }
     }
