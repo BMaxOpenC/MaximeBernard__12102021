@@ -59,4 +59,13 @@
   right: 1rem;
   top: 50%;
   transform: translateY(-50%);
+}
+.menus .card__name .fas {
+  color: transparent;
+  background-image: linear-gradient(red, blue);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.menus .card__name:hover .fas {
+  opacity: 0;
 }/*# sourceMappingURL=menus.css.map */
