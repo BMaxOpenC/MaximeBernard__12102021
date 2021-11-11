@@ -46,13 +46,12 @@
 }
 .menus .card__name {
   position: relative;
+  background-color: white;
+  border-radius: 0 0 1rem 1rem;
 }
 .menus .card__name h3,
 .menus .card__name p {
-  margin: 0.5rem;
-}
-.menus .card__name h3 {
-  padding-top: 0.5rem;
+  padding: 0.3rem;
 }
 .menus .card__name i {
   font-size: 2rem;
