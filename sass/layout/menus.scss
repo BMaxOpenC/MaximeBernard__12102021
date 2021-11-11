@@ -1,5 +1,6 @@
 @import "../utils/variables.scss";
 @import "../utils/colors.scss";
+@import "../utils/linear-gradient.scss";
 
 .menus {
     background-color: #f6f6f6;
@@ -58,12 +59,15 @@
             }
             .fas {
                 color: transparent;
-                background-image: linear-gradient(red, blue);
                 background-clip: text;
                 -webkit-background-clip: text;
+                opacity: 0;
+                transition: all 200ms ease-in-out;
+                @include linear-gradient;
             }
             &:hover .fas {
-                opacity: 0;
+                transform: translateY(-50%) scale(1.1);
+                opacity: 1;
             }
         }
     }

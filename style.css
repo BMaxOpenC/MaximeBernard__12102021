@@ -78,9 +78,9 @@ header {
   margin-top: 1rem;
   border: none;
   border-radius: 2rem;
-  background-image: linear-gradient(to top, #9356DC, #FF79DA);
   transition: transform 300ms;
   box-shadow: 2px 1px 12px -3px black;
+  background-image: linear-gradient(to top, #9356DC, #FF79DA);
 }
 .explorer button:hover {
   transform: scale(1.015);
@@ -196,9 +196,15 @@ header {
 }
 .menus .card__name .fas {
   color: transparent;
-  background-image: linear-gradient(red, blue);
   background-clip: text;
   -webkit-background-clip: text;
+  opacity: 0;
+  transition: all 200ms ease-in-out;
+  background-image: linear-gradient(to top, #9356DC, #FF79DA);
+}
+.menus .card__name:hover .fas {
+  transform: translateY(-50%) scale(1.1);
+  opacity: 1;
 }
 
 footer {
