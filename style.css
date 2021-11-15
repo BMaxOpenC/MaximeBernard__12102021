@@ -219,4 +219,8 @@ footer h2 {
 }
 footer p {
   padding: 0.2rem;
+}
+
+img {
+  max-width: 100%;
 }/*# sourceMappingURL=style.css.map */
