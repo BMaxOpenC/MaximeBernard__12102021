@@ -167,16 +167,16 @@ header {
   background-size: cover;
 }
 .menus .card__img1 {
-  background-image: url("/restaurants/img1.jpg");
+  background-image: url("../restaurants/img1.jpg");
 }
 .menus .card__img2 {
-  background-image: url("/restaurants/img2.jpg");
+  background-image: url("../restaurants/img2.jpg");
 }
 .menus .card__img3 {
-  background-image: url("/restaurants/img3.jpg");
+  background-image: url("../restaurants/img3.jpg");
 }
 .menus .card__img4 {
-  background-image: url("/restaurants/img4.jpg");
+  background-image: url("../restaurants/img4.jpg");
 }
 .menus .card__name {
   position: relative;
@@ -221,6 +221,40 @@ footer p {
   padding: 0.2rem;
 }
 
-img {
-  max-width: 100%;
+.pics img {
+  display: block;
+  width: 100%;
+  height: 70vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.nameresto {
+  margin-top: -2rem;
+}
+.nameresto h2 {
+  font-family: "Shrikhand", "sans-serif";
+  padding: 2rem 1rem;
+  border-radius: 2rem 2rem 0 0;
+  background: red;
+}
+
+.restos-menus {
+  padding: 0 2rem;
+}
+
+.menus-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+@media (max-width: 1000px) {
+  .menus-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.menus-grid > * {
+  border: 1 px solid red;
 }/*# sourceMappingURL=style.css.map */
