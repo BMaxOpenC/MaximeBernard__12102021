@@ -15,11 +15,12 @@
   font-family: "Shrikhand", "sans-serif";
   padding: 2rem 1rem;
   border-radius: 2rem 2rem 0 0;
-  background: red;
+  background-color: #f6f6f6;
 }
 
 .restos-menus {
   padding: 0 1rem;
+  background-color: #f6f6f6;
 }
 
 .menus-grid {

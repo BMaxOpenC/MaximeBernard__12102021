@@ -2,12 +2,12 @@
 @import "../utils/colors.scss";
 @import "../utils/linear-gradient.scss";
 
-.menus {
+.restos {
     background-color: #f6f6f6;
     margin-bottom: 2rem;
     
 
-    .menus__cards {
+    .restos__cards {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;

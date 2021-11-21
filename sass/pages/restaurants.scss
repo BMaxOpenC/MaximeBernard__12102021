@@ -1,4 +1,5 @@
 @import "../utils/variables.scss";
+@import "../utils/colors.scss";
 
 .pics img {
     display: block;
@@ -14,12 +15,13 @@
         font-family: "Shrikhand", "sans-serif";
         padding: 2rem 1rem;
         border-radius: 2rem 2rem 0 0;
-        background: red;
+        background-color: $lightergrey;
     }
 }
 
 .restos-menus {
     padding: 0 1rem;
+    background-color: $lightergrey;
 }
 
 .menus-grid {
