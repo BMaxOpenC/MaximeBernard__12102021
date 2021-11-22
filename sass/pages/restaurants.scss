@@ -24,14 +24,31 @@
     background-color: $lightergrey;
 }
 
-.menus-grid {
+.menus {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
     @media (max-width: $breakpoint) {
         grid-template-columns: 1fr;
     }
-    & > * {
-        border: 1 px solid red;
+    .menus__cat {
+        background-color: white;
+        border-radius: 1rem;
+        .menus-dish {
+            display: flex;
+            .menus-dish__price {
+                margin-left: auto;
+                font-weight: 900;
+                padding: 1rem;
+                display: flex;
+                align-items: flex-end;
+            }
+            .menus-dish__description {
+                padding: 1rem;
+            }
+            .menus-dish__check {
+                background-color: $tertiary;
+            }
+        }
     }
 }
