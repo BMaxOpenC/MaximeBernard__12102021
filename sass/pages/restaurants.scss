@@ -36,6 +36,7 @@
         border-radius: 1rem;
         .menus-dish {
             display: flex;
+            overflow: hidden;
             .menus-dish__price {
                 margin-left: auto;
                 font-weight: 900;
@@ -48,6 +49,11 @@
             }
             .menus-dish__check {
                 background-color: $tertiary;
+                margin-right: -3rem;
+                width: 3rem;
+            }
+            &:hover .menus-dish__check {
+                margin-right: 0%;
             }
         }
     }

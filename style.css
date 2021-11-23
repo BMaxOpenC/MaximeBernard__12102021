@@ -263,6 +263,7 @@ footer p {
 }
 .menus .menus__cat .menus-dish {
   display: flex;
+  overflow: hidden;
 }
 .menus .menus__cat .menus-dish .menus-dish__price {
   margin-left: auto;
@@ -276,4 +277,9 @@ footer p {
 }
 .menus .menus__cat .menus-dish .menus-dish__check {
   background-color: #99e2d0;
+  margin-right: -3rem;
+  width: 3rem;
+}
+.menus .menus__cat .menus-dish:hover .menus-dish__check {
+  margin-right: 0%;
 }/*# sourceMappingURL=style.css.map */
