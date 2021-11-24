@@ -18,7 +18,7 @@
     border: none;
     border-radius: 2rem;
     transition: transform 300ms;
-    @include base-shadow;
+    @include box-shadow;
     @include linear-gradient;
     }
     & button:hover {

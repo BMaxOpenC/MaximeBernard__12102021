@@ -1,5 +1,6 @@
 @import "../utils/variables.scss";
 @import "../utils/colors.scss";
+@import "../utils/box-shadow.scss";
 
 .pics img {
     display: block;
@@ -33,10 +34,11 @@
     }
     .menus__cat {
         background-color: white;
-        border-radius: 1rem;
         .menus-dish {
             display: flex;
             overflow: hidden;
+            border-radius: 1rem;
+            @include box-shadow;
             .menus-dish__price {
                 margin-left: auto;
                 font-weight: 900;
@@ -48,9 +50,23 @@
                 padding: 1rem;
             }
             .menus-dish__check {
+                display: grid;
+                justify-content: center;
+                align-items: center;
                 background-color: $tertiary;
-                margin-right: -3rem;
-                width: 3rem;
+                border-radius: 0 1rem 1rem 0;
+                margin-right: -4rem;
+                width: 4rem;
+                transition: margin-right 0.5s;
+                i {
+                    display: grid;
+                    place-items: center;
+                    background: white;
+                    aspect-ratio: 1;
+                    width: 2rem;
+                    border-radius: 1rem;
+                    color: $tertiary;
+                }
             }
             &:hover .menus-dish__check {
                 margin-right: 0%;
