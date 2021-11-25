@@ -1,3 +1,19 @@
+@-webkit-keyframes spin {
+  0% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
 .pics img {
   display: block;
   width: 100%;
@@ -35,11 +51,12 @@
 }
 .menus .menus__cat {
   background-color: white;
+  overflow: hidden;
 }
 .menus .menus__cat .menus-dish {
   display: flex;
-  overflow: hidden;
   border-radius: 1rem;
+  overflow: hidden;
   box-shadow: 2px 1px 12px -3px black;
 }
 .menus .menus__cat .menus-dish .menus-dish__price {
@@ -51,11 +68,19 @@
 }
 .menus .menus__cat .menus-dish .menus-dish__description {
   padding: 1rem;
+  overflow: hidden;
+}
+.menus .menus__cat .menus-dish .menus-dish__description h4,
+.menus .menus__cat .menus-dish .menus-dish__description p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .menus .menus__cat .menus-dish .menus-dish__check {
   display: grid;
   justify-content: center;
   align-items: center;
+  flex-shrink: 0;
   background-color: #99e2d0;
   border-radius: 0 1rem 1rem 0;
   margin-right: -4rem;
@@ -73,4 +98,8 @@
 }
 .menus .menus__cat .menus-dish:hover .menus-dish__check {
   margin-right: 0%;
+}
+.menus .menus__cat .menus-dish:hover i {
+  -webkit-animation: spin 0.5s ease-in-out;
+          animation: spin 0.5s ease-in-out;
 }/*# sourceMappingURL=restaurants.css.map */
