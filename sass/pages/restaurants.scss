@@ -2,6 +2,8 @@
 @import "../utils/colors.scss";
 @import "../utils/box-shadow.scss";
 @import "../utils/anim.scss";
+@import "../utils/button.scss";
+@import "../utils/linear-gradient.scss";
 
 .pics img {
     display: block;
@@ -94,6 +96,7 @@
                 }
             }
             &:hover {
+                cursor: pointer;
                 .menus-dish__check {
                 margin-right: 0%;
                 }
@@ -102,5 +105,14 @@
                 }
             }
         }
+    }
+}
+
+section.order {
+    height: 30vh;
+    display: grid;
+    place-items: center;
+    button {
+        @include button;
     }
 }
