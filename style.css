@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
 *,
@@ -240,6 +241,22 @@ footer p {
     transform: rotate(0);
   }
 }
+header::before {
+  display: inline-block;
+  position: absolute;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "";
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+
 .pics img {
   display: block;
   width: 100%;

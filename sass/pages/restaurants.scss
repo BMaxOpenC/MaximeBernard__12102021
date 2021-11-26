@@ -4,6 +4,16 @@
 @import "../utils/anim.scss";
 @import "../utils/button.scss";
 @import "../utils/linear-gradient.scss";
+@import "../utils/arrow.scss";
+
+header::before {
+    @include arrow;
+    content: "\f060";
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
 
 .pics img {
     display: block;
