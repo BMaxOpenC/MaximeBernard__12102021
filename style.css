@@ -80,7 +80,7 @@ header {
   border: none;
   border-radius: 2rem;
   transition: transform 300ms;
-  box-shadow: 2px 1px 12px -3px black;
+  box-shadow: 2px 1px 12px -3px #7e7e7e;
   background-image: linear-gradient(to top, #9356DC, #FF79DA);
 }
 .explorer button:hover {
@@ -108,7 +108,7 @@ header {
   padding: 1.6rem 2rem;
   flex-grow: 1;
   border-radius: 1rem;
-  box-shadow: 2px 1px 12px -3px black;
+  box-shadow: 2px 1px 12px -3px #7e7e7e;
 }
 .functioning li::before {
   counter-increment: funcnum;
@@ -274,15 +274,30 @@ footer p {
     grid-template-columns: 1fr;
   }
 }
+.menus h3 {
+  text-transform: uppercase;
+  font-weight: 400;
+  position: relative;
+}
+.menus h3::after {
+  content: "";
+  position: absolute;
+  top: 1.5rem;
+  left: 0;
+  height: 0.25rem;
+  width: 3rem;
+  background-color: #99e2d0;
+}
 .menus .menus__cat {
-  background-color: white;
   overflow: hidden;
 }
 .menus .menus__cat .menus-dish {
+  background-color: white;
   display: flex;
   border-radius: 1rem;
   overflow: hidden;
-  box-shadow: 2px 1px 12px -3px black;
+  margin: 0.5rem;
+  box-shadow: 2px 1px 12px -3px #7e7e7e;
 }
 .menus .menus__cat .menus-dish .menus-dish__price {
   margin-left: auto;

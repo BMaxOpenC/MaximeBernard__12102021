@@ -33,13 +33,28 @@
     @media (max-width: $breakpoint) {
         grid-template-columns: 1fr;
     }
+    h3 {
+        text-transform: uppercase;
+        font-weight: 400;
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            top: 1.5rem;
+            left: 0;
+            height: 0.25rem;
+            width: 3rem;
+            background-color: $tertiary;
+        }
+    }
     .menus__cat {
-        background-color: white;
         overflow: hidden;
         .menus-dish {
+            background-color: white;
             display: flex;
             border-radius: 1rem;
             overflow: hidden;
+            margin: 0.5rem;
             @include box-shadow;
             .menus-dish__price {
                 margin-left: auto;
