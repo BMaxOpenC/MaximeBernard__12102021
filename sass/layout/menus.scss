@@ -1,6 +1,7 @@
 @import "../utils/variables.scss";
 @import "../utils/colors.scss";
 @import "../utils/linear-gradient.scss";
+@import "../utils/heart.scss";
 
 .restos {
     background-color: #f6f6f6;
@@ -46,29 +47,26 @@
             position: relative;
             background-color: white;
             border-radius: 0 0 1rem 1rem;
+            &::before {
+                @include heart;
+                
+            }
+            &::after {
+                @include heart;
+                @include linear-gradient;
+                opacity: 0;
+                color: transparent;
+                font-weight: 900;
+            }
+            &:hover::after {
+                opacity: 1;
+                transform: translateY(-50%) scale(1.1);
+            }
             h3,
             p {
                 padding: 0.3rem;
             }
-            i {
-                font-size: 2rem;
-                position: absolute;
-                right: 1rem;
-                top: 50%;
-                transform: translateY(-50%);
-            }
-            .fas {
-                color: transparent;
-                background-clip: text;
-                -webkit-background-clip: text;
-                opacity: 0;
-                transition: all 200ms ease-in-out;
-                @include linear-gradient;
-            }
-            &:hover .fas {
-                transform: translateY(-50%) scale(1.1);
-                opacity: 1;
-            }
+    
         }
     }
 }
