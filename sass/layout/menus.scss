@@ -2,6 +2,7 @@
 @import "../utils/colors.scss";
 @import "../utils/linear-gradient.scss";
 @import "../utils/heart.scss";
+@import "../utils/global-hearts.scss";
 
 .restos {
     background-color: #f6f6f6;
@@ -40,28 +41,12 @@
         }
         @for $i from 1 through 4 {
             &__img#{$i} {
-                background-image: url("../restaurants/img#{$i}.jpg");
+                background-image: url("./restaurants/img#{$i}.jpg");
             }
         }
         &__name {
-            position: relative;
-            background-color: white;
-            border-radius: 0 0 1rem 1rem;
-            &::before {
-                @include heart;
-                
-            }
-            &::after {
-                @include heart;
-                @include linear-gradient;
-                opacity: 0;
-                color: transparent;
-                font-weight: 900;
-            }
-            &:hover::after {
-                opacity: 1;
-                transform: translateY(-50%) scale(1.1);
-            }
+           @include global-hearts;
+            
             h3,
             p {
                 padding: 0.3rem;

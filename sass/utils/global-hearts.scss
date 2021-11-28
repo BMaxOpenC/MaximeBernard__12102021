@@ -1,0 +1,19 @@
+@mixin global-heart {
+    position: relative;
+    background-color: white;
+    border-radius: 0 0 1rem 1rem;
+    &::before {
+        @include heart;        
+    }
+    &::after {
+        @include heart;
+        @include linear-gradient;
+        opacity: 0;
+        color: transparent;
+        font-weight: 900;
+    }
+    &:hover::after {
+        opacity: 1;
+        transform: translateY(-50%) scale(1.1);
+    }
+}

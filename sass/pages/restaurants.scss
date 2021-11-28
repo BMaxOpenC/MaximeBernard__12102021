@@ -4,7 +4,9 @@
 @import "../utils/anim.scss";
 @import "../utils/button.scss";
 @import "../utils/linear-gradient.scss";
+@import "../utils/heart.scss";
 @import "../utils/arrow.scss";
+@import "../utils/global-hearts.scss";
 
 header::before {
     @include arrow;
@@ -28,6 +30,7 @@ header::before {
     h2 {
         font-family: "Shrikhand", "sans-serif";
         padding: 2rem 1rem;
+        @include global-hearts;
         border-radius: 2rem 2rem 0 0;
         background-color: $lightergrey;
     }
