@@ -2,7 +2,7 @@
 @import "../utils/colors.scss";
 @import "../utils/linear-gradient.scss";
 @import "../utils/heart.scss";
-@import "../utils/global-hearts.scss";
+@import "../utils/global-heart.scss";
 
 .restos {
     background-color: #f6f6f6;
@@ -38,6 +38,7 @@
             height: 15rem;
             border-radius: 1rem 1rem 0 0;
             background-size: cover;
+            background-position: center;
         }
         @for $i from 1 through 4 {
             &__img#{$i} {
@@ -45,13 +46,11 @@
             }
         }
         &__name {
-           @include global-hearts;
-            
+            @include global-heart;
             h3,
             p {
-                padding: 0.3rem;
+            padding: 0.3rem;
             }
-    
         }
     }
 }

@@ -15,7 +15,13 @@
     transform: rotate(0);
   }
 }
-header::before {
+.arrow {
+  transition: transform 3s;
+}
+.arrow:hover::before {
+  transform: translateY(-50%) scale(1.2);
+}
+.arrow::before {
   display: inline-block;
   position: absolute;
   font-style: normal;
@@ -45,9 +51,11 @@ header::before {
   margin-top: -2rem;
 }
 .nameresto h2 {
-  position: relative;
   font-family: "Shrikhand", "sans-serif";
   padding: 2rem 1rem;
+  position: relative;
+  background-color: white;
+  border-radius: 0 0 1rem 1rem;
   border-radius: 2rem 2rem 0 0;
   background-color: #f6f6f6;
 }

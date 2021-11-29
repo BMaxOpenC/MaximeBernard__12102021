@@ -1,20 +1,28 @@
 @import "../utils/variables.scss";
+@import "../utils/zoom.scss";
+@import "../utils/arrow.scss";
 @import "../utils/colors.scss";
+@import "../utils/linear-gradient.scss";
+@import "../utils/heart.scss";
+@import "../utils/global-heart.scss";
 @import "../utils/box-shadow.scss";
 @import "../utils/anim.scss";
 @import "../utils/button.scss";
-@import "../utils/linear-gradient.scss";
-@import "../utils/heart.scss";
-@import "../utils/arrow.scss";
-@import "../utils/global-hearts.scss";
 
-header::before {
+
+.arrow {
+    transition: transform 3s;
+    &:hover::before {
+        @include zoom($zoom-level: 1.2, $transformation: translateY(-50%));
+    }
+    &::before {
     @include arrow;
     content: "\f060";
     left: 1rem;
     top: 50%;
     transform: translateY(-50%);
     font-size: 20px;
+    }
 }
 
 .pics img {
@@ -30,7 +38,7 @@ header::before {
     h2 {
         font-family: "Shrikhand", "sans-serif";
         padding: 2rem 1rem;
-        @include global-hearts;
+        @include global-heart;
         border-radius: 2rem 2rem 0 0;
         background-color: $lightergrey;
     }

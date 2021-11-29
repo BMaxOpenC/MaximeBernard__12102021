@@ -168,18 +168,19 @@ header {
   height: 15rem;
   border-radius: 1rem 1rem 0 0;
   background-size: cover;
+  background-position: center;
 }
 .restos .card__img1 {
-  background-image: url("../restaurants/img1.jpg");
+  background-image: url("./restaurants/img1.jpg");
 }
 .restos .card__img2 {
-  background-image: url("../restaurants/img2.jpg");
+  background-image: url("./restaurants/img2.jpg");
 }
 .restos .card__img3 {
-  background-image: url("../restaurants/img3.jpg");
+  background-image: url("./restaurants/img3.jpg");
 }
 .restos .card__img4 {
-  background-image: url("../restaurants/img4.jpg");
+  background-image: url("./restaurants/img4.jpg");
 }
 .restos .card__name {
   position: relative;
@@ -270,7 +271,13 @@ footer p {
     transform: rotate(0);
   }
 }
-header::before {
+.arrow {
+  transition: transform 3s;
+}
+.arrow:hover::before {
+  transform: translateY(-50%) scale(1.2);
+}
+.arrow::before {
   display: inline-block;
   position: absolute;
   font-style: normal;
@@ -300,9 +307,11 @@ header::before {
   margin-top: -2rem;
 }
 .nameresto h2 {
-  position: relative;
   font-family: "Shrikhand", "sans-serif";
   padding: 2rem 1rem;
+  position: relative;
+  background-color: white;
+  border-radius: 0 0 1rem 1rem;
   border-radius: 2rem 2rem 0 0;
   background-color: #f6f6f6;
 }
