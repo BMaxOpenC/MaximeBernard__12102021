@@ -13,4 +13,24 @@
   100% {
     transform: rotate(0);
   }
+}
+@-webkit-keyframes apparition {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes apparition {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }/*# sourceMappingURL=anim.css.map */

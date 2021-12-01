@@ -1,4 +1,4 @@
- @keyframes spin {
+@keyframes spin {
     0% {
         transform: rotate(-270deg);
     }
@@ -7,3 +7,13 @@
     }
 }
 
+@keyframes apparition {
+    0% {
+        transform: translateY(50%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

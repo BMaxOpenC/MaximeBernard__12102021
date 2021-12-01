@@ -11,7 +11,6 @@
 
 
 .arrow {
-    transition: transform 3s;
     &:hover::before {
         @include zoom($zoom-level: 1.2, $transformation: translateY(-50%));
     }
@@ -22,6 +21,7 @@
     top: 50%;
     transform: translateY(-50%);
     font-size: 20px;
+    transition: transform 200ms;
     }
 }
 
@@ -60,6 +60,7 @@
         text-transform: uppercase;
         font-weight: 400;
         position: relative;
+        margin-bottom: 1.5rem;
         &::after {
             content: "";
             position: absolute;
@@ -72,13 +73,21 @@
     }
     .menus__cat {
         overflow: hidden;
+        
         .menus-dish {
+            @for $i from 1 through 3 {
+                &:nth-child(#{$i}) {
+                    animation-delay: 100ms * $i;
+                }
+            }
             background-color: white;
             display: flex;
             border-radius: 1rem;
             overflow: hidden;
             margin: 0.5rem;
             @include box-shadow;
+            animation: apparition 1s;
+            animation-fill-mode: both;
             .menus-dish__price {
                 margin-left: auto;
                 font-weight: 900;
