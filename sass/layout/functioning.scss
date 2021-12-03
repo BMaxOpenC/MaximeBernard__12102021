@@ -17,6 +17,8 @@
     }
     & li {
         position: relative;
+        display: flex;
+        align-items: center;
         &::before {
             counter-increment: funcnum;
             content: counter(funcnum);
@@ -39,6 +41,10 @@
         @include box-shadow;
         &:hover {
             @include zoom;
+            background-color: lighten($color: $purple, $amount: 35%);
+            i::before {
+                color: $purple;
+            }
         }
         & i.fas {
             margin-right: 0.8rem;
