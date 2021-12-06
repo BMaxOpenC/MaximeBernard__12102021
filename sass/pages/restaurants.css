@@ -154,7 +154,7 @@
   left: 0;
   height: 0.25rem;
   width: 3rem;
-  background-color: #99e2d0;
+  background-color: #99E2D0;
 }
 .menus .menus__cat {
   overflow: hidden;
@@ -205,7 +205,7 @@
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
-  background-color: #99e2d0;
+  background-color: #99E2D0;
   border-radius: 0 1rem 1rem 0;
   margin-right: -4rem;
   width: 4rem;
@@ -218,7 +218,7 @@
   height: 1rem;
   width: 1rem;
   border-radius: 1rem;
-  color: #99e2d0;
+  color: #99E2D0;
 }
 .menus .menus__cat .menus-dish:hover {
   cursor: pointer;

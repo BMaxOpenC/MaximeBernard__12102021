@@ -20,48 +20,38 @@
 }
 
 .loader {
+    $animation-duration: 1s;
+    $animation-count: 3;
     position: fixed;
     display: grid;
     place-items: center;
-    z-index: 1;
     background-color: #ffffff;
-    opacity: 0.9;
     height: 100vh;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    animation: fog 200ms;
-    animation-delay: 6s;
-    animation-fill-mode: forwards;
+    inset: 0;
+    z-index: 1;
+    opacity: 0.9;
+    animation: disappear 200ms $animation-duration * $animation-count forwards;
     transform-origin: top;
     &::after {
-        content: "";
-        height: 100px;
-        width: 100px;
-        animation: spin 3s;
-        animation-iteration-count: 2;
-        animation-timing-function: ease-in-out;
-        border-top: 12px solid $tertiary;
-        border-bottom: 12px solid $purple;
-        border-radius: 45%;
+      content: "";
+      height: 100px;
+      width: 100px;
+      border-right: 5px solid transparent;
+      border-top: 5px solid $tertiary;
+      border-radius: 50%;
+      animation: spin $animation-duration ease-in-out;
+      animation-iteration-count: $animation-count;
     }
-}
-
-@keyframes fog {
-    0% {
-        transform: scale(1);
+  }
+  
+  @keyframes disappear {
+    to {
+      transform: scale(0);
     }
-    100% {
-        transform: scale(0);
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
     }
-}
-
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
+  }

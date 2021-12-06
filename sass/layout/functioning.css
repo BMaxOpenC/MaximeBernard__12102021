@@ -25,7 +25,7 @@
 .functioning li::before {
   counter-increment: funcnum;
   content: counter(funcnum);
-  background-color: #9356dc;
+  background-color: #9356DC;
   width: 2.5rem;
   height: 2.5rem;
   display: grid;
@@ -41,7 +41,7 @@
   background-color: #f2eafb;
 }
 .functioning li:hover i::before {
-  color: #9356dc;
+  color: #9356DC;
 }
 .functioning li i.fas {
   margin-right: 0.8rem;

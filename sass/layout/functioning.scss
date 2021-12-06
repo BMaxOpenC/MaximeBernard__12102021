@@ -22,7 +22,7 @@
         &::before {
             counter-increment: funcnum;
             content: counter(funcnum);
-            background-color: $purple;
+            background-color: $primary;
             width: 2.5 * $circlefun-height;
             height: 2.5 * $circlefun-height;
             display: grid;
@@ -41,9 +41,9 @@
         @include box-shadow;
         &:hover {
             @include zoom;
-            background-color: lighten($color: $purple, $amount: 35%);
+            background-color: lighten($color: $primary, $amount: 35%);
             i::before {
-                color: $purple;
+                color: $primary;
             }
         }
         & i.fas {
