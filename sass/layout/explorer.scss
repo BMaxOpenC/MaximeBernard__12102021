@@ -36,7 +36,7 @@
     animation-fill-mode: forwards;
     transform-origin: top;
     &::after {
-        content: "Ohmyfood!";
+        content: "";
         height: 100px;
         width: 100px;
         animation: spin 3s;
@@ -44,7 +44,7 @@
         animation-timing-function: ease-in-out;
         border-top: 12px solid $tertiary;
         border-bottom: 12px solid $purple;
-        border-radius: 50%;
+        border-radius: 45%;
     }
 }
 

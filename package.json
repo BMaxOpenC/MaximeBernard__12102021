@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "Projet Ohmyfood",
   "main": "index.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "postcss": "^8.4.4",
+    "postcss-cli": "^9.0.2"
+  },
   "scripts": {
     "sass": "sass --watch style.scss style.css"
   },
