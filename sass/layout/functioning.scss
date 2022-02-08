@@ -22,6 +22,7 @@
         &::before {
             counter-increment: funcnum;
             content: counter(funcnum);
+            color: white;
             background-color: $primary;
             width: 2.5 * $circlefun-height;
             height: 2.5 * $circlefun-height;
