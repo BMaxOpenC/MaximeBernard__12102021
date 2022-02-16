@@ -48,6 +48,7 @@ header {
 .titlehead {
   font-size: 2.2rem;
   margin: 0.5rem;
+  font-weight: 400;
 }
 
 .city {
@@ -57,13 +58,21 @@ header {
   gap: 1rem;
   background-color: #f3f3f3;
   text-align: center;
-  padding: 0.5rem;
+  padding: 1.5rem;
 }
 .city i {
   font-size: 1.5rem;
 }
 .city h2 {
   font-size: 1.2rem;
+}
+
+.city input {
+  border: none;
+  background: transparent;
+  font-size: 17px;
+  width: 135px;
+  font-weight: bold;
 }
 
 .explorer {
@@ -171,6 +180,7 @@ header {
   counter-increment: funcnum;
   content: counter(funcnum);
   background-color: #9356DC;
+  color: white;
   width: 2.5rem;
   height: 2.5rem;
   display: grid;

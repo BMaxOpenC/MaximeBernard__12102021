@@ -5,11 +5,19 @@
   gap: 1rem;
   background-color: #f3f3f3;
   text-align: center;
-  padding: 0.5rem;
+  padding: 1.5rem;
 }
 .city i {
   font-size: 1.5rem;
 }
 .city h2 {
   font-size: 1.2rem;
+}
+
+.city input {
+  border: none;
+  background: transparent;
+  font-size: 17px;
+  width: 135px;
+  font-weight: bold;
 }/*# sourceMappingURL=city.css.map */
